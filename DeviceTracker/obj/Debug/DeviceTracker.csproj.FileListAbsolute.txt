@@ -1,0 +1,1 @@
+c:\users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\bin\Debug\DeviceTracker.exe.config
