@@ -12,6 +12,6 @@ namespace Model
         public string Name;
         public int EmployerTitleID;
         public virtual EmployerTitle Title { get; set; }
-        public virtual ICollection<EmployerProject> Projects { get; set; }
+        public virtual ICollection<EmployerProject> EmployerMovments { get; set; }
     }
 }

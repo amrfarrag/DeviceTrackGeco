@@ -17,10 +17,11 @@ namespace Model
         public int EmployerDeviceID;
         public int EmployerID;
         public int ProjectID;
-        public int 
+        public int EmployerDeviceDescriptionID;
         public DeviceState State;
         public virtual Employer Employer { get; set; }
         public virtual Project Project { get; set; }
+        public virtual EmployerDeviceDescription Description { get; set; }
 
     }
 }

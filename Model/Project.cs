@@ -17,6 +17,6 @@ namespace Model
         public string Name;
         public string Location;
         public ProjectState State;
-        public virtual ICollection<EmployerProject> Employers { get; set; }
+        public virtual ICollection<EmployerProject> EmploymentHistory { get; set; }
     }
 }

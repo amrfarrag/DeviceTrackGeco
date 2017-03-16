@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Device
+    public enum OwnerType
     {
+        Personal,Public
+    }
+    public enum DeviceType
+    {
+        Mobile,Fixed
+    }
+    public class Device
+    {
+        public int DeviceID;
+        public string Description;
+        public OwnerType Owenr;
+        public DeviceType Type;
     }
 }
