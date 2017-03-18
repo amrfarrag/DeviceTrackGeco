@@ -1,1 +1,8 @@
 c:\users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\bin\Debug\DeviceTracker.exe.config
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\bin\Debug\DeviceTracker.exe
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\bin\Debug\DeviceTracker.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\obj\Debug\DeviceTracker.csprojResolveAssemblyReference.cache
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\obj\Debug\DeviceTracker.Properties.Resources.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\obj\Debug\DeviceTracker.csproj.GenerateResource.Cache
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\obj\Debug\DeviceTracker.exe
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTracker\obj\Debug\DeviceTracker.pdb

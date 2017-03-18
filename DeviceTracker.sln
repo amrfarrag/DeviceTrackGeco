@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceTracker", "DeviceTracker\DeviceTracker.csproj", "{AF7C3782-9160-4D39-9672-ACE69CE4961E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{D1CFEB88-79EE-4B8A-8404-7F63B6276555}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{39F1A016-4759-4D86-A212-4A6A7A1A5F50}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF7C3782-9160-4D39-9672-ACE69CE4961E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF7C3782-9160-4D39-9672-ACE69CE4961E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF7C3782-9160-4D39-9672-ACE69CE4961E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF7C3782-9160-4D39-9672-ACE69CE4961E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1CFEB88-79EE-4B8A-8404-7F63B6276555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1CFEB88-79EE-4B8A-8404-7F63B6276555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1CFEB88-79EE-4B8A-8404-7F63B6276555}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -16,9 +16,9 @@ namespace Model
     }
     public class Device
     {
-        public int DeviceID;
-        public string Description;
-        public OwnerType Owenr;
-        public DeviceType Type;
+        public int DeviceID { get; set; }
+        public string Description { get; set; }
+        public OwnerType Owenr { get; set; }
+        public DeviceType Type { get; set; }
     }
 }

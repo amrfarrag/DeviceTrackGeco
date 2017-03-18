@@ -8,7 +8,7 @@ namespace Model
 {
    public class EmployerDeviceDescription
     {
-        public int EmployerDeviceDescriptionID;
-        public string Description;
+        public int EmployerDeviceDescriptionID { get; set; }
+        public string Description { get; set; }
     }
 }

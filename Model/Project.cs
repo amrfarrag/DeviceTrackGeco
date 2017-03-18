@@ -12,11 +12,11 @@ namespace Model
     }
     public class Project
     {
-        public int ProjectID;
-        public DateTime StartDate;
-        public string Name;
-        public string Location;
-        public ProjectState State;
+        public int ProjectID { get; set; }
+        public DateTime StartDate { get; set; }
+        public string Name { get; set; }
+        public string Location { get; set; }
+        public ProjectState State { get; set; }
         public virtual ICollection<EmployerProject> EmploymentHistory { get; set; }
     }
 }

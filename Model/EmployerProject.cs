@@ -12,10 +12,10 @@ namespace Model
     }
    public class EmployerProject
     {
-        public int EmployerProjectID;
-        public int EmployerID;
-        public int ProjectID;
-        public EmployerState State;
+        public int EmployerProjectID { get; set; }
+        public int EmployerID { get; set; }
+        public int ProjectID { get; set; }
+        public EmployerState State { get; set; }
         public virtual Employer Employer { get; set; }
         public virtual Project Project { get; set; }
     }

@@ -14,11 +14,11 @@ namespace Model
     }
    public class EmployerDevice
     {
-        public int EmployerDeviceID;
-        public int EmployerID;
-        public int ProjectID;
-        public int EmployerDeviceDescriptionID;
-        public DeviceState State;
+        public int EmployerDeviceID { get; set; }
+        public int EmployerID { get; set; }
+        public int ProjectID { get; set; }
+        public int EmployerDeviceDescriptionID { get; set; }
+        public DeviceState State { get; set; }
         public virtual Employer Employer { get; set; }
         public virtual Project Project { get; set; }
         public virtual EmployerDeviceDescription Description { get; set; }
