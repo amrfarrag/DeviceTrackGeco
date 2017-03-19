@@ -50,17 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeviceTractingContext.cs" />
-    <Compile Include="Migrations\201703181530113_create.cs" />
-    <Compile Include="Migrations\201703181530113_create.Designer.cs">
-      <DependentUpon>201703181530113_create.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703181531271_employermi.cs" />
-    <Compile Include="Migrations\201703181531271_employermi.Designer.cs">
-      <DependentUpon>201703181531271_employermi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703181533135_prermi.cs" />
-    <Compile Include="Migrations\201703181533135_prermi.Designer.cs">
-      <DependentUpon>201703181533135_prermi.cs</DependentUpon>
+    <Compile Include="Migrations\201703190809222_create.cs" />
+    <Compile Include="Migrations\201703190809222_create.Designer.cs">
+      <DependentUpon>201703190809222_create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,14 +70,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703181530113_create.resx">
-      <DependentUpon>201703181530113_create.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703181531271_employermi.resx">
-      <DependentUpon>201703181531271_employermi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703181533135_prermi.resx">
-      <DependentUpon>201703181533135_prermi.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703190809222_create.resx">
+      <DependentUpon>201703190809222_create.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

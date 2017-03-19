@@ -8,9 +8,7 @@ C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\bin\Debug\
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\bin\Debug\EntityFramework.xml
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.dll
-C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.pdb
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.Migrations.create.resources
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
-C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.Migrations.employermi.resources
-C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.Migrations.prermi.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.pdb
