@@ -11,3 +11,16 @@ C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerU
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.exe
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.pdb
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.ProjectUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.EmployerUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\BusinessLogic.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\DAL.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\Model.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\AutoMapper.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\BusinessLogic.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\DAL.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\Model.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\AutoMapper.xml
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.xml
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.SqlServer.xml

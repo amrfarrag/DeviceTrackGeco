@@ -32,7 +32,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Addbtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProjectsGrid)).BeginInit();
@@ -75,14 +75,15 @@
             this.textBox1.Size = new System.Drawing.Size(376, 20);
             this.textBox1.TabIndex = 3;
             // 
-            // button1
+            // Addbtn
             // 
-            this.button1.Location = new System.Drawing.Point(644, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Addbtn.Location = new System.Drawing.Point(644, 34);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(75, 23);
+            this.Addbtn.TabIndex = 4;
+            this.Addbtn.Text = "button1";
+            this.Addbtn.UseVisualStyleBackColor = true;
+            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
             // button2
             // 
@@ -108,7 +109,7 @@
             this.ClientSize = new System.Drawing.Size(812, 553);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -128,7 +129,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
     }

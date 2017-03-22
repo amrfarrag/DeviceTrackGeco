@@ -13,7 +13,7 @@ namespace BusinessLogic
         public string Name { get; set; }
         public string Location { get; set; }
         //must lazy load pattern
-        public virtual ICollection<EmployerProject> EmploymentHistory { get; set; }
+        //public virtual ICollection<EmployerProject> EmploymentHistory { get; set; }
         public void AddEmployer(Employer emp)
         {
 
@@ -34,10 +34,10 @@ namespace BusinessLogic
 
         }
         //iltrator pattern
-        public List<Employer> GetEmployers()
-        {
+        //public List<Employer> GetEmployers()
+        //{
 
-        }
+        //}
         public void Delete()
         {
 

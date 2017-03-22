@@ -11,7 +11,7 @@ namespace BusinessLogic
         public int EmployerID { get; set; }
         public string Name { get; set; }
         public int EmployerTitleID { get; set; }
-        public virtual EmployerTitle Title { get; set; }
-        public virtual ICollection<EmployerProject> EmployerMovments { get; set; }
+        //public virtual EmployerTitle Title { get; set; }
+        //public virtual ICollection<EmployerProject> EmployerMovments { get; set; }
     }
 }

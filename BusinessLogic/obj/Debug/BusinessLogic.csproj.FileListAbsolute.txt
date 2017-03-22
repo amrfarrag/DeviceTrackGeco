@@ -1,0 +1,17 @@
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\AutoMapper.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\DAL.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\Model.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\System.ValueTuple.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\DAL.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\Model.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\AutoMapper.xml
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\BusinessLogic\obj\Debug\BusinessLogic.pdb

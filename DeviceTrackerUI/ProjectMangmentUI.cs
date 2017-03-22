@@ -22,5 +22,11 @@ namespace DeviceTrackerUI
            pm = new ProjectMangment();
            ProjectsGrid.DataSource= pm.GetProjects();
         }
+
+        private void Addbtn_Click(object sender, EventArgs e)
+        {
+            ProjectUI pui = new ProjectUI();
+            pui.Show();
+        }
     }
 }

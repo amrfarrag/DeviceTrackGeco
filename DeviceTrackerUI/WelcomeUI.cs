@@ -16,5 +16,11 @@ namespace DeviceTrackerUI
         {
             InitializeComponent();
         }
+
+        private void ProjectManbtn_Click(object sender, EventArgs e)
+        {
+            ProjectMangmentUI prmui = new ProjectMangmentUI();
+            prmui.Show();
+        }
     }
 }
