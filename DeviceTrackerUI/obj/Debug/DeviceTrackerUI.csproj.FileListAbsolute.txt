@@ -1,1 +1,13 @@
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\DeviceTrackerUI.exe.config
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\DeviceTrackerUI.exe
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\DeviceTrackerUI.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.csprojResolveAssemblyReference.cache
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.DeviceManagementUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.EmploymentManagementUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.WelcomeUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.ProjectMangmentUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.Properties.Resources.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.csproj.GenerateResource.Cache
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.exe
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.ProjectUI.resources

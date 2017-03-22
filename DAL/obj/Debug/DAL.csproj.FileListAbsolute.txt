@@ -12,3 +12,4 @@ C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.dll
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.pdb
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DAL\obj\Debug\DAL.Migrations._new.resources
