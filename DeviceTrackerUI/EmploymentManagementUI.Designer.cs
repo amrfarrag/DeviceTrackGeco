@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.EmployerGrid = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployerGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // EmployerGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(788, 463);
-            this.dataGridView1.TabIndex = 0;
+            this.EmployerGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmployerGrid.Location = new System.Drawing.Point(12, 78);
+            this.EmployerGrid.Name = "EmployerGrid";
+            this.EmployerGrid.Size = new System.Drawing.Size(788, 463);
+            this.EmployerGrid.TabIndex = 0;
             // 
             // comboBox1
             // 
@@ -112,10 +112,11 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.EmployerGrid);
             this.Name = "EmploymentManagementUI";
             this.Text = "EmploymentManagementUI";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.EmploymentManagementUI_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.EmployerGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +124,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView EmployerGrid;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

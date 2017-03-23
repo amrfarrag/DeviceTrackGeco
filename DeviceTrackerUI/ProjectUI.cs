@@ -16,5 +16,10 @@ namespace DeviceTrackerUI
         {
             InitializeComponent();
         }
+
+        private void AddEmployer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessLogic;
 using System.Windows.Forms;
 
 namespace DeviceTrackerUI
@@ -15,6 +16,17 @@ namespace DeviceTrackerUI
         public EmploymentManagementUI()
         {
             InitializeComponent();
+        }
+        Project tproject =null;
+        public EmploymentManagementUI(Project pr)
+        {
+            InitializeComponent();
+            this.tproject = pr; 
+        }
+
+        private void EmploymentManagementUI_Load(object sender, EventArgs e)
+        {
+            if(tproject != null) EmployerGrid.DataSource=tproject.
         }
     }
 }

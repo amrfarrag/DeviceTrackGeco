@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Model;
 namespace BusinessLogic
 {
     public class Project
@@ -33,11 +33,7 @@ namespace BusinessLogic
         {
 
         }
-        //iltrator pattern
-        //public List<Employer> GetEmployers()
-        //{
-
-        //}
+       // iltrator pattern
         public void Delete()
         {
 
