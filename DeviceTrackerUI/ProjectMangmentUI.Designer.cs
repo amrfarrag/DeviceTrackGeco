@@ -40,11 +40,19 @@
             // 
             // ProjectsGrid
             // 
+            this.ProjectsGrid.AllowUserToAddRows = false;
+            this.ProjectsGrid.AllowUserToDeleteRows = false;
+            this.ProjectsGrid.AllowUserToResizeColumns = false;
+            this.ProjectsGrid.AllowUserToResizeRows = false;
             this.ProjectsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProjectsGrid.Location = new System.Drawing.Point(6, 78);
+            this.ProjectsGrid.MultiSelect = false;
             this.ProjectsGrid.Name = "ProjectsGrid";
+            this.ProjectsGrid.RowHeadersVisible = false;
+            this.ProjectsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProjectsGrid.Size = new System.Drawing.Size(794, 463);
             this.ProjectsGrid.TabIndex = 0;
+            this.ProjectsGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.ProjectsGrid_CellMouseClick);
             // 
             // radioButton1
             // 

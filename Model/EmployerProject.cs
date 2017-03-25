@@ -15,6 +15,7 @@ namespace Model
         public int EmployerProjectID { get; set; }
         public int EmployerID { get; set; }
         public int ProjectID { get; set; }
+        public DateTime Date { get; set; }
         public EmployerState State { get; set; }
         public virtual Employer Employer { get; set; }
         public virtual Project Project { get; set; }

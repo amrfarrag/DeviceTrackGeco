@@ -28,5 +28,16 @@ namespace DeviceTrackerUI
             ProjectUI pui = new ProjectUI();
             pui.Show();
         }
+
+        private void ProjectsGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                Project pr = (Project)ProjectsGrid.SelectedRows[0].DataBoundItem;
+                ProjectUI ui = new ProjectUI(pr);
+                ui.Show();
+            }
+            catch { }
+        }
     }
 }

@@ -22,5 +22,11 @@ namespace DeviceTrackerUI
             ProjectMangmentUI prmui = new ProjectMangmentUI();
             prmui.Show();
         }
+
+        private void EmpManage_Click(object sender, EventArgs e)
+        {
+            EmploymentManagementUI ui = new EmploymentManagementUI();
+            ui.Show();
+        }
     }
 }

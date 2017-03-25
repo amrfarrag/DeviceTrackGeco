@@ -26,7 +26,13 @@ namespace DeviceTrackerUI
 
         private void EmploymentManagementUI_Load(object sender, EventArgs e)
         {
-            if(tproject != null) EmployerGrid.DataSource=tproject.
+           
+        }
+
+        private void Addempbtn_Click(object sender, EventArgs e)
+        {
+            EmployerUI ui = new EmployerUI();
+            ui.Show();
         }
     }
 }

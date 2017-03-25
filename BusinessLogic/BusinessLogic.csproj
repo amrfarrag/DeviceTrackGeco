@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employer.cs" />
+    <Compile Include="EmployerTitle.cs" />
     <Compile Include="EmploymentManagement.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="ProjectMangment.cs" />

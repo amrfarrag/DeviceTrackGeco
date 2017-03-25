@@ -15,7 +15,9 @@ namespace DAL.Migrations
 
         protected override void Seed(DAL.DeviceTractingContext context)
         {
-
+            Model.EmployerTitle tit = new Model.EmployerTitle() { Title = "Eng" };
+            context.EmployerTitles.Add(tit);
+            context.SaveChanges();
         }
     }
 }

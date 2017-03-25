@@ -12,8 +12,7 @@ namespace BusinessLogic
         public DateTime StartDate { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
-        //must lazy load pattern
-        //public virtual ICollection<EmployerProject> EmploymentHistory { get; set; }
+        
         public void AddEmployer(Employer emp)
         {
 
@@ -29,15 +28,7 @@ namespace BusinessLogic
         {
 
         }
-        public void Save()
-        {
 
-        }
-       // iltrator pattern
-        public void Delete()
-        {
-
-        }
 
     }
 }
