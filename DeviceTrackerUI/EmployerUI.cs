@@ -23,6 +23,7 @@ namespace DeviceTrackerUI
             this.temp = emp;
             nametxt.Text = emp.Name;
             Titlecb.SelectedValue = emp.EmployerTitleID;
+            projectcb.SelectedValue = emp.GetCurrentProject() == null ? -1 : emp.GetCurrentProject().ProjectID;
 
         }
 
@@ -48,6 +49,24 @@ namespace DeviceTrackerUI
             Titlecb.DataSource = emmanage.GetTitles();
 
 
+        }
+
+        private void Savebtn_Click(object sender, EventArgs e)
+        {
+            EmploymentManagement emmanage = new EmploymentManagement();
+
+            if (temp==null)
+            {
+                temp = new Employer() { Name = nametxt.Text ,EmployerTitleID=(int)Titlecb.SelectedValue };
+                emmanage.Save(temp);
+                emmanage.Join((int)projectcb.SelectedValue,dateTimePicker1.Value);
+            }
+            else
+            {
+                if (joinbtn.Checked) emmanage.Join((int)projectcb.SelectedValue, dateTimePicker1.Value);
+                else emmanage.Transfer((int)projectcb.SelectedValue, dateTimePicker1.Value);
+                
+            }
         }
     }
 }

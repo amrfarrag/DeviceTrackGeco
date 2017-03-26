@@ -15,6 +15,8 @@ namespace BusinessLogic
         {
             Project pr = null;
             if (EmployerID == 0) return pr;
+            EmploymentManagement emang = new EmploymentManagement();
+           return emang.GetLastProject(this);
 
         }
         //public virtual ICollection<EmployerProject> EmployerMovments { get; set; }

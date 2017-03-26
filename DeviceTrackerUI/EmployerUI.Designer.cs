@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Savebtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.nametxt = new System.Windows.Forms.TextBox();
             this.Titlecb = new System.Windows.Forms.ComboBox();
             this.projectcb = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.joinbtn = new System.Windows.Forms.RadioButton();
+            this.transferbtn = new System.Windows.Forms.RadioButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // button1
+            // Savebtn
             // 
-            this.button1.Location = new System.Drawing.Point(219, 312);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Savebtn.Location = new System.Drawing.Point(219, 312);
+            this.Savebtn.Name = "Savebtn";
+            this.Savebtn.Size = new System.Drawing.Size(75, 23);
+            this.Savebtn.TabIndex = 0;
+            this.Savebtn.Text = "button1";
+            this.Savebtn.UseVisualStyleBackColor = true;
+            this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
             // 
             // button2
             // 
@@ -79,27 +80,27 @@
             this.projectcb.Size = new System.Drawing.Size(232, 21);
             this.projectcb.TabIndex = 5;
             // 
-            // radioButton1
+            // joinbtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(190, 260);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(87, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.joinbtn.AutoSize = true;
+            this.joinbtn.Checked = true;
+            this.joinbtn.Location = new System.Drawing.Point(190, 260);
+            this.joinbtn.Name = "joinbtn";
+            this.joinbtn.Size = new System.Drawing.Size(44, 17);
+            this.joinbtn.TabIndex = 6;
+            this.joinbtn.TabStop = true;
+            this.joinbtn.Text = "Join";
+            this.joinbtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // transferbtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(319, 260);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.transferbtn.AutoSize = true;
+            this.transferbtn.Location = new System.Drawing.Point(319, 260);
+            this.transferbtn.Name = "transferbtn";
+            this.transferbtn.Size = new System.Drawing.Size(66, 17);
+            this.transferbtn.TabIndex = 7;
+            this.transferbtn.Text = "Transfer";
+            this.transferbtn.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
@@ -114,13 +115,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 496);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.transferbtn);
+            this.Controls.Add(this.joinbtn);
             this.Controls.Add(this.projectcb);
             this.Controls.Add(this.Titlecb);
             this.Controls.Add(this.nametxt);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Savebtn);
             this.Name = "EmployerUI";
             this.Text = "Employer";
             this.Load += new System.EventHandler(this.EmployerUI_Load);
@@ -131,13 +132,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Savebtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox nametxt;
         private System.Windows.Forms.ComboBox Titlecb;
         private System.Windows.Forms.ComboBox projectcb;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton joinbtn;
+        private System.Windows.Forms.RadioButton transferbtn;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

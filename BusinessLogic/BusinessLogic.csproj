@@ -57,6 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Device.cs" />
+    <Compile Include="DeviceMangment.cs" />
     <Compile Include="Employer.cs" />
     <Compile Include="EmployerTitle.cs" />
     <Compile Include="EmploymentManagement.cs" />
