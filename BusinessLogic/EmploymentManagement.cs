@@ -49,7 +49,7 @@ namespace BusinessLogic
         {
             AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.Project, Project>());
             return AutoMapper.Mapper.Map<Project>((from t in ctx.EmployerProjects where t.EmployerID == emp.EmployerID
-                                                   select t).OrderBy(t => t.Date).Select(t => t.Project).Last<Model.Project>());
+                                                   select t.Project).First());
         }
         public void Save(Employer emp)
         {

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic
 {
-  public  class DeviceMangment
+    class DeviceTrack
     {
-        public void Transfer() { }
-        public void End(Device dev ,s) { }
+        public Device Device { get; set; }
+        public Project Project { get; set; }
+
+        publi
     }
 }

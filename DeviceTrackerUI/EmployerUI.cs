@@ -16,21 +16,21 @@ namespace DeviceTrackerUI
         {
             InitializeComponent();
         }
-        private Employer temp = null;
+        private Employer temp = new Employer();
         public EmployerUI(Employer emp)
         {
             InitializeComponent();
+            LoadProjects();
+            LoadTitles();
             this.temp = emp;
             nametxt.Text = emp.Name;
             Titlecb.SelectedValue = emp.EmployerTitleID;
             projectcb.SelectedValue = emp.GetCurrentProject() == null ? -1 : emp.GetCurrentProject().ProjectID;
-
         }
 
         private void EmployerUI_Load(object sender, EventArgs e)
         {
-            LoadProjects();
-            LoadTitles();
+
 
         }
         private void LoadProjects()
@@ -53,16 +53,19 @@ namespace DeviceTrackerUI
 
         private void Savebtn_Click(object sender, EventArgs e)
         {
-            EmploymentManagement emmanage = new EmploymentManagement();
-
+            EmploymentManagement emmanage = null;
+            temp .EmployerTitleID = (int)Titlecb.SelectedValue ;
+            temp.Name = nametxt.Text;
             if (temp==null)
             {
-                temp = new Employer() { Name = nametxt.Text ,EmployerTitleID=(int)Titlecb.SelectedValue };
+                emmanage = new EmploymentManagement();
                 emmanage.Save(temp);
                 emmanage.Join((int)projectcb.SelectedValue,dateTimePicker1.Value);
             }
             else
             {
+                emmanage = new EmploymentManagement(temp);
+                emmanage.Save(temp);
                 if (joinbtn.Checked) emmanage.Join((int)projectcb.SelectedValue, dateTimePicker1.Value);
                 else emmanage.Transfer((int)projectcb.SelectedValue, dateTimePicker1.Value);
                 

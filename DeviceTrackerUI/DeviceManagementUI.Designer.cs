@@ -30,7 +30,7 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddDevicebtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -55,14 +55,15 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // AddDevicebtn
             // 
-            this.button1.Location = new System.Drawing.Point(647, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddDevicebtn.Location = new System.Drawing.Point(647, 37);
+            this.AddDevicebtn.Name = "AddDevicebtn";
+            this.AddDevicebtn.Size = new System.Drawing.Size(75, 23);
+            this.AddDevicebtn.TabIndex = 17;
+            this.AddDevicebtn.Text = "button1";
+            this.AddDevicebtn.UseVisualStyleBackColor = true;
+            this.AddDevicebtn.Click += new System.EventHandler(this.AddDevicebtn_Click);
             // 
             // textBox1
             // 
@@ -108,7 +109,7 @@
             this.ClientSize = new System.Drawing.Size(812, 553);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AddDevicebtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -125,7 +126,7 @@
 
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AddDevicebtn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;

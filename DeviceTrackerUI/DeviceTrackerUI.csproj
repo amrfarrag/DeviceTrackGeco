@@ -79,6 +79,12 @@
     <Compile Include="EmploymentManagementUI.Designer.cs">
       <DependentUpon>EmploymentManagementUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransferUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferUI.Designer.cs">
+      <DependentUpon>TransferUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <EmbeddedResource Include="DeviceManagementUI.resx">
       <DependentUpon>DeviceManagementUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeviceUI.resx">
+      <DependentUpon>DeviceUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployerUI.resx">
       <DependentUpon>EmployerUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectUI.resx">
       <DependentUpon>ProjectUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferUI.resx">
+      <DependentUpon>TransferUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeUI.resx">
       <DependentUpon>WelcomeUI.cs</DependentUpon>

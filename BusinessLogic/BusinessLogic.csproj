@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Device.cs" />
     <Compile Include="DeviceMangment.cs" />
+    <Compile Include="DeviceTrack.cs" />
     <Compile Include="Employer.cs" />
     <Compile Include="EmployerTitle.cs" />
     <Compile Include="EmploymentManagement.cs" />

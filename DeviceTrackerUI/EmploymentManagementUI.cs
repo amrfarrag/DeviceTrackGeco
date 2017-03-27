@@ -35,5 +35,15 @@ namespace DeviceTrackerUI
             EmployerUI ui = new EmployerUI();
             ui.Show();
         }
+
+        private void EmployerGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+                Employer emp = (Employer)EmployerGrid.SelectedRows[0].DataBoundItem;
+                EmployerUI ui = new EmployerUI(emp);
+                ui.Show();
+            
+        
+        }
     }
 }

@@ -24,3 +24,5 @@ C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerU
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.xml
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.DeviceUI.resources
+C:\Users\hema\documents\visual studio 2015\Projects\DeviceTracker\DeviceTrackerUI\obj\Debug\DeviceTrackerUI.TransferUI.resources

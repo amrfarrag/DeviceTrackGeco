@@ -15,6 +15,14 @@ namespace DeviceTrackerUI
         public DeviceManagementUI()
         {
             InitializeComponent();
+
         }
+
+        private void AddDevicebtn_Click(object sender, EventArgs e)
+        {
+            TransferUI ui = new TransferUI();
+            ui.Show();
+        }
+
     }
 }

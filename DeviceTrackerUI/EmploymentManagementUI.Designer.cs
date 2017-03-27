@@ -47,8 +47,11 @@
             this.EmployerGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EmployerGrid.Location = new System.Drawing.Point(12, 78);
             this.EmployerGrid.Name = "EmployerGrid";
+            this.EmployerGrid.RowHeadersVisible = false;
+            this.EmployerGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.EmployerGrid.Size = new System.Drawing.Size(788, 463);
             this.EmployerGrid.TabIndex = 0;
+            this.EmployerGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployerGrid_CellDoubleClick);
             // 
             // comboBox1
             // 

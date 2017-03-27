@@ -28,5 +28,11 @@ namespace DeviceTrackerUI
             EmploymentManagementUI ui = new EmploymentManagementUI();
             ui.Show();
         }
+
+        private void DeviceMangmentUI_Click(object sender, EventArgs e)
+        {
+            DeviceManagementUI ui = new DeviceManagementUI();
+            ui.Show();
+        }
     }
 }
