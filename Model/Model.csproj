@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Device.cs" />
     <Compile Include="Employer.cs" />
-    <Compile Include="EmployerDeviceDescription.cs" />
     <Compile Include="EmployerProject.cs" />
     <Compile Include="EmployerTitle.cs" />
     <Compile Include="Project.cs" />

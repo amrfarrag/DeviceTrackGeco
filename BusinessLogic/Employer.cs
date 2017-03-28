@@ -19,6 +19,5 @@ namespace BusinessLogic
            return emang.GetLastProject(this);
 
         }
-        //public virtual ICollection<EmployerProject> EmployerMovments { get; set; }
     }
 }

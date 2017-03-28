@@ -21,7 +21,6 @@ namespace DAL
              public DbSet<EmployerDevice> EmployerDevices { get; set; }
              public DbSet<Device> Devices { get; set; }
              public DbSet<Employer> Employers { get; set; }
-             public DbSet<EmployerDeviceDescription> EmployerDeviceDescriptions { get; set; }
              public DbSet<EmployerProject> EmployerProjects { get; set; }
 
 

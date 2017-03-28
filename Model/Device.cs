@@ -17,7 +17,7 @@ namespace Model
     public enum DeviceState
     {
 
-        New, Queued, Ended
+        New, Queued,Transfer, Ended
 
     }
     public class Device
