@@ -38,11 +38,18 @@
             // 
             // devicegrid
             // 
+            this.devicegrid.AllowUserToAddRows = false;
+            this.devicegrid.AllowUserToResizeColumns = false;
+            this.devicegrid.AllowUserToResizeRows = false;
+            this.devicegrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.devicegrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.devicegrid.Location = new System.Drawing.Point(13, 167);
             this.devicegrid.Name = "devicegrid";
+            this.devicegrid.RowHeadersVisible = false;
+            this.devicegrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.devicegrid.Size = new System.Drawing.Size(702, 364);
             this.devicegrid.TabIndex = 0;
+            this.devicegrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.devicegrid_CellDoubleClick);
             // 
             // addbtn
             // 

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic
 {
+    public enum State
+    {
+        New, Queued, Transfer, Ended
+    }
     public class Device
     {
         public int ID { get; set; }

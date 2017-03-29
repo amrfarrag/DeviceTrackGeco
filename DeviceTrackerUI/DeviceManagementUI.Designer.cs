@@ -32,7 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.AddDevicebtn = new System.Windows.Forms.Button();
             this.employerrb = new System.Windows.Forms.RadioButton();
-            this.prjectrb = new System.Windows.Forms.RadioButton();
+            this.projectrb = new System.Windows.Forms.RadioButton();
             this.devicegrid = new System.Windows.Forms.DataGridView();
             this.projectemployercmb = new System.Windows.Forms.ComboBox();
             this.devicestatcmb = new System.Windows.Forms.ComboBox();
@@ -76,28 +76,38 @@
             this.employerrb.Text = "radioButton2";
             this.employerrb.UseVisualStyleBackColor = true;
             // 
-            // prjectrb
+            // projectrb
             // 
-            this.prjectrb.AutoSize = true;
-            this.prjectrb.Checked = true;
-            this.prjectrb.Location = new System.Drawing.Point(16, 14);
-            this.prjectrb.Name = "prjectrb";
-            this.prjectrb.Size = new System.Drawing.Size(87, 17);
-            this.prjectrb.TabIndex = 14;
-            this.prjectrb.TabStop = true;
-            this.prjectrb.Text = "radioButton1";
-            this.prjectrb.UseVisualStyleBackColor = true;
+            this.projectrb.AutoSize = true;
+            this.projectrb.Checked = true;
+            this.projectrb.Location = new System.Drawing.Point(16, 14);
+            this.projectrb.Name = "projectrb";
+            this.projectrb.Size = new System.Drawing.Size(87, 17);
+            this.projectrb.TabIndex = 14;
+            this.projectrb.TabStop = true;
+            this.projectrb.Text = "radioButton1";
+            this.projectrb.UseVisualStyleBackColor = true;
             // 
             // devicegrid
             // 
+            this.devicegrid.AllowUserToAddRows = false;
+            this.devicegrid.AllowUserToOrderColumns = true;
+            this.devicegrid.AllowUserToResizeColumns = false;
+            this.devicegrid.AllowUserToResizeRows = false;
+            this.devicegrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.devicegrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.devicegrid.Location = new System.Drawing.Point(9, 77);
             this.devicegrid.Name = "devicegrid";
+            this.devicegrid.RowHeadersVisible = false;
+            this.devicegrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.devicegrid.Size = new System.Drawing.Size(788, 463);
             this.devicegrid.TabIndex = 13;
+            this.devicegrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.devicegrid_CellDoubleClick);
             // 
             // projectemployercmb
             // 
+            this.projectemployercmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.projectemployercmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.projectemployercmb.FormattingEnabled = true;
             this.projectemployercmb.Location = new System.Drawing.Point(16, 39);
             this.projectemployercmb.Name = "projectemployercmb";
@@ -123,7 +133,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.AddDevicebtn);
             this.Controls.Add(this.employerrb);
-            this.Controls.Add(this.prjectrb);
+            this.Controls.Add(this.projectrb);
             this.Controls.Add(this.devicegrid);
             this.Name = "DeviceManagementUI";
             this.Text = "DeviceManagementUI";
@@ -140,7 +150,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button AddDevicebtn;
         private System.Windows.Forms.RadioButton employerrb;
-        private System.Windows.Forms.RadioButton prjectrb;
+        private System.Windows.Forms.RadioButton projectrb;
         private System.Windows.Forms.DataGridView devicegrid;
         private System.Windows.Forms.ComboBox projectemployercmb;
         private System.Windows.Forms.ComboBox devicestatcmb;

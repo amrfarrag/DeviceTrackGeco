@@ -18,15 +18,7 @@ namespace BusinessLogic
         {
             this.dt = tr;
             Save();
-            //var config = new AutoMapper.MapperConfiguration(cfg => {
-            //    cfg.CreateMap<DeviceTrack, Model.EmployerDevice>();
-            //    cfg.CreateMap<Employer, Model.Employer>();
-            //});
-            ////config.AssertConfigurationIsValid();
-
-            //config.CreateMapper();
-
-            AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<DeviceTrack, Model.EmployerDevice>());
+            AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<DeviceTrack, Model.EmployerDevice>().ForMember(m => m.Employer ,op => op.Ignore()).ForMember(x =>x.Project,opt =>opt.Ignore()));
             Model.EmployerDevice ed = AutoMapper.Mapper.Map<Model.EmployerDevice>(dt);
             ed.IsOwned = true;
             ctx.EmployerDevices.Add(ed);
@@ -99,6 +91,19 @@ namespace BusinessLogic
             AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.EmployerDevice, DeviceTrack>());
             return AutoMapper.Mapper.Map<List<DeviceTrack>>(from t in ctx.EmployerDevices
                                                             where t.EmployerID == emp.EmployerID
+                                                            select t);
+        }
+        public Device GetDevice(int id)
+        {
+            AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.Device, Device>());
+            return AutoMapper.Mapper.Map<Device>((from t in ctx.Devices where t.ID == id select t).First());
+
+        }
+        public List<DeviceTrack> GetAllTracking(Device dev)
+        {
+            AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.EmployerDevice, DeviceTrack>());
+            return AutoMapper.Mapper.Map<List<DeviceTrack>>(from t in ctx.EmployerDevices
+                                                            where t.DeviceID == dev.ID
                                                             select t);
         }
     }

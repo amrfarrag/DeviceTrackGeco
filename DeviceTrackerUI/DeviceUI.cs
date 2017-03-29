@@ -28,7 +28,26 @@ namespace DeviceTrackerUI
         {
             destxt.Text = temp.Description;
             label1.Text = temp.ID.ToString();
+            DeviceMangment dmn = new DeviceMangment();
+            var x = dmn.GetAllTracking(temp)
+                .Select(p => new
+                {
+                    ID = p.DeviceID
+                                                               ,
+                    ProjectName = p.GetProject().Name
+                                                               ,
+                    EmployerName = p.GetEmployer().Name
+                                                               ,
+                    Descripation = p.Description
+                                                               ,
+                    Date = p.AssignedDate
+                }).ToList();
 
+            devicegrid.DataSource = x;
+        }
+
+        private void devicegrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

@@ -79,6 +79,7 @@
     <Compile Include="EmploymentManagementUI.Designer.cs">
       <DependentUpon>EmploymentManagementUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Projection.cs" />
     <Compile Include="TransferUI.cs">
       <SubType>Form</SubType>
     </Compile>
