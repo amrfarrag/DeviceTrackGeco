@@ -30,8 +30,8 @@ namespace DeviceTrackerUI
             label1.Text = tr.DeviceID.ToString();
             descipationtxt.Text = tr.Description;
             dateTimePicker1.Value = tr.AssignedDate;
-            projectcmb.SelectedValue = tr.ProjectID;
-            employercmb.SelectedValue = tr.EmployerID;
+            projectcmb.SelectedValue = tr.ProjectID ?? -1;
+            employercmb.SelectedValue = tr.EmployerID ?? -1;
         }
 
         private void TransferUI_Load(object sender, EventArgs e)

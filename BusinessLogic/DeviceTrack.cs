@@ -24,7 +24,7 @@ namespace BusinessLogic
             {
                 pr = (from t in ctx.Projects
                       where t.ProjectID == this.ProjectID
-                      select t).First();
+                      select t).FirstOrDefault();
             }
             return AutoMapper.Mapper.Map<Project>(pr);
         }
@@ -36,7 +36,7 @@ namespace BusinessLogic
             {
                 emp = (from t in ctx.Employers
                        where t.EmployerID == this.EmployerID
-                       select t).First();
+                       select t).FirstOrDefault();
 
             }
             return AutoMapper.Mapper.Map<Employer>(emp);

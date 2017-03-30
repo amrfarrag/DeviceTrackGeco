@@ -12,9 +12,11 @@ namespace DeviceTrackerUI
 {
     public partial class DeviceManagementUI : Form
     {
+        List<DeviceTrackProjection> projection = null;
         public DeviceManagementUI()
         {
             InitializeComponent();
+            this.projection = new List<DeviceTrackProjection>();
 
         }
 
@@ -28,11 +30,16 @@ namespace DeviceTrackerUI
         {
 
             DeviceMangment dmn = new DeviceMangment();
-            devicestatcmb.DataSource = Enum.GetNames(typeof(State));
+
+            this.devicestatcmb.DataSource = Enum.GetValues(typeof(State)).Cast<State>()
+                                            .Select(x => new { Value = x, Text = x.ToString() })
+                                            .ToList();
+            this.devicestatcmb.ValueMember = "Value";
+            this.devicestatcmb.DisplayMember = "Text";
             devicestatcmb.SelectedIndex = -1;
             LoadProjects();
-            var x = dmn.GetAllWorking()
-                .Select(p => new
+            projection = dmn.GetAllWorking()
+                .Select(p => new DeviceTrackProjection
                 {
                     ID = p.DeviceID
                                                                ,
@@ -42,16 +49,65 @@ namespace DeviceTrackerUI
                                                                ,
                     Descripation = p.Description
                                                                ,
+                    IsOwned = p.IsOwned                         ,
                     Date = p.AssignedDate
                 }).ToList();
-            devicegrid.DataSource = x;
+            devicegrid.DataSource = projection;
             devicestatcmb.SelectedIndexChanged += Devicestatcmb_SelectedIndexChanged;
             projectrb.CheckedChanged += Projectrb_CheckedChanged;
             projectemployercmb.SelectedIndexChanged += Projectemployercmb_SelectedIndexChanged;
+            devicestatcmb.SelectedIndexChanged += Devicestatcmb_SelectedIndexChanged1;
+        }
+
+        private void Devicestatcmb_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            DeviceMangment dm = new DeviceMangment();
+            if (devicestatcmb.SelectedText == "Transfered") devicegrid.DataSource = projection;
+            else {
+                devicegrid.DataSource = dm.GetDeviceByState((int)devicestatcmb.SelectedValue);
+            }
         }
 
         private void Projectemployercmb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            DeviceMangment dmn = new DeviceMangment();
+            if (projectrb.Checked)
+            {
+
+                projection = dmn.GetAllWorking((Project)projectemployercmb.SelectedItem == null ? new Project() : (Project)projectemployercmb.SelectedItem)
+                    .Select(p => new DeviceTrackProjection
+                    {
+                        ID = p.DeviceID
+                                                                   ,
+                        ProjectName = p.GetProject().Name
+                                                                   ,
+                        EmployerName = p.GetEmployer().Name
+                                                                   ,
+                        Descripation = p.Description
+                                                                   ,
+                        IsOwned = p.IsOwned                         ,
+                        Date = p.AssignedDate
+                    }).ToList();
+            }
+            else
+            {
+
+                projection = dmn.GetAllWorking((Employer)projectemployercmb.SelectedItem == null ? new Employer(): (Employer)projectemployercmb.SelectedItem)
+                .Select(p => new DeviceTrackProjection
+                {
+                    ID = p.DeviceID
+                                                        ,
+                    ProjectName = p.GetProject().Name
+                                                        ,
+                    EmployerName = p.GetEmployer().Name
+                                                        ,
+                    Descripation = p.Description
+                                                        ,
+                    Date = p.AssignedDate               ,
+                    IsOwned = p.IsOwned
+                }).ToList();
+            }
+
         }
 
         private void Projectrb_CheckedChanged(object sender, EventArgs e)
@@ -72,20 +128,27 @@ namespace DeviceTrackerUI
         }
         private void LoadProjects()
         {
+            devicestatcmb.SelectedIndexChanged -= Devicestatcmb_SelectedIndexChanged;
+
             ProjectMangment pm = new ProjectMangment();
             projectemployercmb.DataSource = pm.GetProjects();
             projectemployercmb.DisplayMember = "Name";
             projectemployercmb.ValueMember = "ProjectID";
             projectemployercmb.SelectedIndex = -1;
+            devicestatcmb.SelectedIndexChanged += Devicestatcmb_SelectedIndexChanged;
+
 
         }
         private void LoadEmployers()
         {
+            devicestatcmb.SelectedIndexChanged -= Devicestatcmb_SelectedIndexChanged;
             EmploymentManagement emang = new EmploymentManagement();
             projectemployercmb.DataSource = emang.GetEmployers();
             projectemployercmb.DisplayMember = "Name";
             projectemployercmb.ValueMember = "EmployerID";
             projectemployercmb.SelectedIndex = -1;
+            devicestatcmb.SelectedIndexChanged += Devicestatcmb_SelectedIndexChanged;
+
         }
     }
 }

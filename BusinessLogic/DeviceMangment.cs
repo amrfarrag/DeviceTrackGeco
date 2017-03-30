@@ -86,7 +86,7 @@ namespace BusinessLogic
                                                             where t.ProjectID == pr.ProjectID
                                                             select t);
         }
-        public List<DeviceTrack> GetAllWorking(Employer emp)
+        public List<DeviceTrack> GetAllWorking(Employer emp )
         {
             AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.EmployerDevice, DeviceTrack>());
             return AutoMapper.Mapper.Map<List<DeviceTrack>>(from t in ctx.EmployerDevices
@@ -99,12 +99,18 @@ namespace BusinessLogic
             return AutoMapper.Mapper.Map<Device>((from t in ctx.Devices where t.ID == id select t).First());
 
         }
-        public List<DeviceTrack> GetAllTracking(Device dev)
+        public IEnumerable<DeviceTrack> GetAllTracking(Device dev)
         {
             AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.EmployerDevice, DeviceTrack>());
-            return AutoMapper.Mapper.Map<List<DeviceTrack>>(from t in ctx.EmployerDevices
+            return AutoMapper.Mapper.Map<IEnumerable<DeviceTrack>>(from t in ctx.EmployerDevices
                                                             where t.DeviceID == dev.ID
                                                             select t);
         }
+        public List<Device> GetDeviceByState(int st)
+        {
+            AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.Device, Device>());
+            return AutoMapper.Mapper.Map<List<Device>>((from t in ctx.Devices where (int)t.State==st  select t));
+        }
+        
     }
 }

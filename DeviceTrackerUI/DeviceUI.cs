@@ -30,17 +30,18 @@ namespace DeviceTrackerUI
             label1.Text = temp.ID.ToString();
             DeviceMangment dmn = new DeviceMangment();
             var x = dmn.GetAllTracking(temp)
-                .Select(p => new
+                ?.Select(p => new DeviceTrackProjection
                 {
                     ID = p.DeviceID
-                                                               ,
-                    ProjectName = p.GetProject().Name
-                                                               ,
-                    EmployerName = p.GetEmployer().Name
-                                                               ,
+                                                        ,
+                    ProjectName = p?.GetProject()?.Name
+                                                        ,
+                    EmployerName = p?.GetEmployer()?.Name
+                                                        ,
                     Descripation = p.Description
-                                                               ,
-                    Date = p.AssignedDate
+                                                        ,
+                    Date = p.AssignedDate,
+                    IsOwned = p.IsOwned
                 }).ToList();
 
             devicegrid.DataSource = x;

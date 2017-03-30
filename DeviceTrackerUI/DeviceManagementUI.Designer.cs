@@ -42,6 +42,9 @@
             // trackstatcmb
             // 
             this.trackstatcmb.FormattingEnabled = true;
+            this.trackstatcmb.Items.AddRange(new object[] {
+            "All",
+            "Owned"});
             this.trackstatcmb.Location = new System.Drawing.Point(423, 39);
             this.trackstatcmb.Name = "trackstatcmb";
             this.trackstatcmb.Size = new System.Drawing.Size(101, 21);

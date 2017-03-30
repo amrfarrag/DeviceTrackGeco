@@ -48,8 +48,11 @@ namespace BusinessLogic
         public Project GetLastProject(Employer emp)
         {
             AutoMapper.Mapper.Initialize(cfg => cfg.CreateMap<Model.Project, Project>());
-            return AutoMapper.Mapper.Map<Project>((from t in ctx.EmployerProjects where t.EmployerID == emp.EmployerID
-                                                   select t.Project).First());
+            Model.Project pr = (from t in ctx.EmployerProjects
+                                where t.EmployerID == emp.EmployerID
+                                select t.Project)?.OrderByDescending(p => p.StartDate)?.FirstOrDefault<Model.Project>();
+                                
+            return pr == null ? null : AutoMapper.Mapper.Map<Project>(pr);
         }
         public void Save(Employer emp)
         {

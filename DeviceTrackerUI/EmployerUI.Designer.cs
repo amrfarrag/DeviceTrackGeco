@@ -44,7 +44,7 @@
             this.Savebtn.Name = "Savebtn";
             this.Savebtn.Size = new System.Drawing.Size(75, 23);
             this.Savebtn.TabIndex = 0;
-            this.Savebtn.Text = "button1";
+            this.Savebtn.Text = "Add";
             this.Savebtn.UseVisualStyleBackColor = true;
             this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
             // 
@@ -54,7 +54,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Fired";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // nametxt

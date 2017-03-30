@@ -70,6 +70,7 @@ namespace DeviceTrackerUI
                 else emmanage.Transfer((int)projectcb.SelectedValue, dateTimePicker1.Value);
                 
             }
+            this.Close();
         }
     }
 }
