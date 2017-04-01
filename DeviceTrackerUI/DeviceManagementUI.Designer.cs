@@ -56,7 +56,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 18;
-            this.button2.Text = "button2";
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // AddDevicebtn
@@ -65,7 +65,7 @@
             this.AddDevicebtn.Name = "AddDevicebtn";
             this.AddDevicebtn.Size = new System.Drawing.Size(75, 23);
             this.AddDevicebtn.TabIndex = 17;
-            this.AddDevicebtn.Text = "button1";
+            this.AddDevicebtn.Text = "Add";
             this.AddDevicebtn.UseVisualStyleBackColor = true;
             this.AddDevicebtn.Click += new System.EventHandler(this.AddDevicebtn_Click);
             // 
@@ -74,9 +74,9 @@
             this.employerrb.AutoSize = true;
             this.employerrb.Location = new System.Drawing.Point(162, 13);
             this.employerrb.Name = "employerrb";
-            this.employerrb.Size = new System.Drawing.Size(87, 17);
+            this.employerrb.Size = new System.Drawing.Size(69, 17);
             this.employerrb.TabIndex = 15;
-            this.employerrb.Text = "radioButton2";
+            this.employerrb.Text = "Employer";
             this.employerrb.UseVisualStyleBackColor = true;
             // 
             // projectrb
@@ -85,10 +85,10 @@
             this.projectrb.Checked = true;
             this.projectrb.Location = new System.Drawing.Point(16, 14);
             this.projectrb.Name = "projectrb";
-            this.projectrb.Size = new System.Drawing.Size(87, 17);
+            this.projectrb.Size = new System.Drawing.Size(59, 17);
             this.projectrb.TabIndex = 14;
             this.projectrb.TabStop = true;
-            this.projectrb.Text = "radioButton1";
+            this.projectrb.Text = "Project";
             this.projectrb.UseVisualStyleBackColor = true;
             // 
             // devicegrid

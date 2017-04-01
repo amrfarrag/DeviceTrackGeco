@@ -40,7 +40,7 @@
             this.ProjectManbtn.Name = "ProjectManbtn";
             this.ProjectManbtn.Size = new System.Drawing.Size(140, 126);
             this.ProjectManbtn.TabIndex = 0;
-            this.ProjectManbtn.Text = "button1";
+            this.ProjectManbtn.Text = "Projects";
             this.ProjectManbtn.UseVisualStyleBackColor = true;
             this.ProjectManbtn.Click += new System.EventHandler(this.ProjectManbtn_Click);
             // 
@@ -50,7 +50,7 @@
             this.EmpManage.Name = "EmpManage";
             this.EmpManage.Size = new System.Drawing.Size(140, 126);
             this.EmpManage.TabIndex = 1;
-            this.EmpManage.Text = "button2";
+            this.EmpManage.Text = "Employers";
             this.EmpManage.UseVisualStyleBackColor = true;
             this.EmpManage.Click += new System.EventHandler(this.EmpManage_Click);
             // 
@@ -60,7 +60,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(140, 126);
             this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
+            this.button3.Text = "Setting";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // DeviceMangmentUI
@@ -69,7 +69,7 @@
             this.DeviceMangmentUI.Name = "DeviceMangmentUI";
             this.DeviceMangmentUI.Size = new System.Drawing.Size(140, 126);
             this.DeviceMangmentUI.TabIndex = 2;
-            this.DeviceMangmentUI.Text = "button4";
+            this.DeviceMangmentUI.Text = "Devices";
             this.DeviceMangmentUI.UseVisualStyleBackColor = true;
             this.DeviceMangmentUI.Click += new System.EventHandler(this.DeviceMangmentUI_Click);
             // 

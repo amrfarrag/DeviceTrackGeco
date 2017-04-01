@@ -44,6 +44,7 @@
             this.EmployerGrid.AllowUserToDeleteRows = false;
             this.EmployerGrid.AllowUserToResizeColumns = false;
             this.EmployerGrid.AllowUserToResizeRows = false;
+            this.EmployerGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.EmployerGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EmployerGrid.Location = new System.Drawing.Point(12, 78);
             this.EmployerGrid.Name = "EmployerGrid";
@@ -67,7 +68,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
-            this.button2.Text = "button2";
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Addempbtn
@@ -76,7 +77,7 @@
             this.Addempbtn.Name = "Addempbtn";
             this.Addempbtn.Size = new System.Drawing.Size(75, 23);
             this.Addempbtn.TabIndex = 10;
-            this.Addempbtn.Text = "button1";
+            this.Addempbtn.Text = "Add";
             this.Addempbtn.UseVisualStyleBackColor = true;
             this.Addempbtn.Click += new System.EventHandler(this.Addempbtn_Click);
             // 
@@ -92,10 +93,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(165, 14);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 17);
+            this.radioButton2.Size = new System.Drawing.Size(59, 17);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "Project";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -103,10 +104,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(19, 15);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(87, 17);
+            this.radioButton1.Size = new System.Drawing.Size(52, 17);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Name";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // EmploymentManagementUI

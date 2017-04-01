@@ -77,7 +77,7 @@
             this.savebtn.Name = "savebtn";
             this.savebtn.Size = new System.Drawing.Size(75, 38);
             this.savebtn.TabIndex = 4;
-            this.savebtn.Text = "button1";
+            this.savebtn.Text = "Add";
             this.savebtn.UseVisualStyleBackColor = true;
             this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
             // 
@@ -87,7 +87,7 @@
             this.Endbtn.Name = "Endbtn";
             this.Endbtn.Size = new System.Drawing.Size(75, 38);
             this.Endbtn.TabIndex = 5;
-            this.Endbtn.Text = "button2";
+            this.Endbtn.Text = "End";
             this.Endbtn.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1

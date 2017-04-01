@@ -15,6 +15,8 @@ namespace DeviceTrackerUI
         public EmployerUI()
         {
             InitializeComponent();
+            LoadProjects();
+            LoadTitles();
         }
         private Employer temp = new Employer();
         public EmployerUI(Employer emp)

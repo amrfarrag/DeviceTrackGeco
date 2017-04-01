@@ -29,7 +29,6 @@ namespace DeviceTrackerUI
         private void DeviceManagementUI_Load(object sender, EventArgs e)
         {
 
-            DeviceMangment dmn = new DeviceMangment();
 
             this.devicestatcmb.DataSource = Enum.GetValues(typeof(State)).Cast<State>()
                                             .Select(x => new { Value = x, Text = x.ToString() })
@@ -38,20 +37,7 @@ namespace DeviceTrackerUI
             this.devicestatcmb.DisplayMember = "Text";
             devicestatcmb.SelectedIndex = -1;
             LoadProjects();
-            projection = dmn.GetAllWorking()
-                .Select(p => new DeviceTrackProjection
-                {
-                    ID = p.DeviceID
-                                                               ,
-                    ProjectName = p.GetProject().Name
-                                                               ,
-                    EmployerName = p.GetEmployer().Name
-                                                               ,
-                    Descripation = p.Description
-                                                               ,
-                    IsOwned = p.IsOwned                         ,
-                    Date = p.AssignedDate
-                }).ToList();
+            LoadGrid();
             devicegrid.DataSource = projection;
             devicestatcmb.SelectedIndexChanged += Devicestatcmb_SelectedIndexChanged;
             projectrb.CheckedChanged += Projectrb_CheckedChanged;
@@ -62,7 +48,8 @@ namespace DeviceTrackerUI
         private void Devicestatcmb_SelectedIndexChanged1(object sender, EventArgs e)
         {
             DeviceMangment dm = new DeviceMangment();
-            if (devicestatcmb.SelectedText == "Transfered") devicegrid.DataSource = projection;
+            if (devicestatcmb.SelectedIndex == 2) LoadGrid();
+            
             else {
                 devicegrid.DataSource = dm.GetDeviceByState((int)devicestatcmb.SelectedValue);
             }
@@ -74,7 +61,7 @@ namespace DeviceTrackerUI
             if (projectrb.Checked)
             {
 
-                projection = dmn.GetAllWorking((Project)projectemployercmb.SelectedItem == null ? new Project() : (Project)projectemployercmb.SelectedItem)
+                devicegrid.DataSource = dmn.GetAllWorking((Project)projectemployercmb.SelectedItem == null ? new Project() : (Project)projectemployercmb.SelectedItem)
                     .Select(p => new DeviceTrackProjection
                     {
                         ID = p.DeviceID
@@ -92,7 +79,7 @@ namespace DeviceTrackerUI
             else
             {
 
-                projection = dmn.GetAllWorking((Employer)projectemployercmb.SelectedItem == null ? new Employer(): (Employer)projectemployercmb.SelectedItem)
+                devicegrid.DataSource = dmn.GetAllWorking((Employer)projectemployercmb.SelectedItem == null ? new Employer(): (Employer)projectemployercmb.SelectedItem)
                 .Select(p => new DeviceTrackProjection
                 {
                     ID = p.DeviceID
@@ -149,6 +136,25 @@ namespace DeviceTrackerUI
             projectemployercmb.SelectedIndex = -1;
             devicestatcmb.SelectedIndexChanged += Devicestatcmb_SelectedIndexChanged;
 
+        }
+        private void LoadGrid()
+        {
+            DeviceMangment dmn = new DeviceMangment();
+            projection = dmn.GetAllWorking()
+               .Select(p => new DeviceTrackProjection
+               {
+                   ID = p.DeviceID
+                                                              ,
+                   ProjectName = p.GetProject().Name
+                                                              ,
+                   EmployerName = p.GetEmployer().Name
+                                                              ,
+                   Descripation = p.Description
+                                                              ,
+                   IsOwned = p.IsOwned,
+                   Date = p.AssignedDate
+               }).ToList();
+            devicegrid.DataSource = projection;
         }
     }
 }

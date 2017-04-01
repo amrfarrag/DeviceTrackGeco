@@ -75,6 +75,7 @@ namespace DeviceTrackerUI
             tr.AssignedDate = dateTimePicker1.Value;
             DeviceMangment dmn = new DeviceMangment();
             dmn.Transfer(tr);
+            this.Close();
         }
     }
 }

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.ProjectsGrid = new System.Windows.Forms.DataGridView();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ByNamerb = new System.Windows.Forms.RadioButton();
+            this.ByAddressrb = new System.Windows.Forms.RadioButton();
             this.Addbtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProjectsGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,6 +44,7 @@
             this.ProjectsGrid.AllowUserToDeleteRows = false;
             this.ProjectsGrid.AllowUserToResizeColumns = false;
             this.ProjectsGrid.AllowUserToResizeRows = false;
+            this.ProjectsGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProjectsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProjectsGrid.Location = new System.Drawing.Point(6, 78);
             this.ProjectsGrid.MultiSelect = false;
@@ -54,34 +55,27 @@
             this.ProjectsGrid.TabIndex = 0;
             this.ProjectsGrid.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.ProjectsGrid_CellMouseClick);
             // 
-            // radioButton1
+            // ByNamerb
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 11);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(87, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.ByNamerb.AutoSize = true;
+            this.ByNamerb.Location = new System.Drawing.Point(13, 11);
+            this.ByNamerb.Name = "ByNamerb";
+            this.ByNamerb.Size = new System.Drawing.Size(52, 17);
+            this.ByNamerb.TabIndex = 1;
+            this.ByNamerb.TabStop = true;
+            this.ByNamerb.Text = "Name";
+            this.ByNamerb.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // ByAddressrb
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(159, 10);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 20);
-            this.textBox1.TabIndex = 3;
+            this.ByAddressrb.AutoSize = true;
+            this.ByAddressrb.Location = new System.Drawing.Point(159, 10);
+            this.ByAddressrb.Name = "ByAddressrb";
+            this.ByAddressrb.Size = new System.Drawing.Size(64, 17);
+            this.ByAddressrb.TabIndex = 2;
+            this.ByAddressrb.TabStop = true;
+            this.ByAddressrb.Text = "Address";
+            this.ByAddressrb.UseVisualStyleBackColor = true;
             // 
             // Addbtn
             // 
@@ -89,7 +83,7 @@
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(75, 23);
             this.Addbtn.TabIndex = 4;
-            this.Addbtn.Text = "button1";
+            this.Addbtn.Text = "Add";
             this.Addbtn.UseVisualStyleBackColor = true;
             this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
             // 
@@ -99,7 +93,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
+            this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // comboBox1
@@ -110,17 +104,25 @@
             this.comboBox1.Size = new System.Drawing.Size(183, 21);
             this.comboBox1.TabIndex = 6;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(13, 33);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(379, 21);
+            this.comboBox2.TabIndex = 7;
+            // 
             // ProjectMangmentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 553);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Addbtn);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.ByAddressrb);
+            this.Controls.Add(this.ByNamerb);
             this.Controls.Add(this.ProjectsGrid);
             this.Name = "ProjectMangmentUI";
             this.Text = "ProjectMangmentUI";
@@ -134,11 +136,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView ProjectsGrid;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton ByNamerb;
+        private System.Windows.Forms.RadioButton ByAddressrb;
         private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
