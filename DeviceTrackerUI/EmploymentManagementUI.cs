@@ -28,6 +28,29 @@ namespace DeviceTrackerUI
         {
             EmploymentManagement mm = new EmploymentManagement();
             EmployerGrid.DataSource = mm.GetEmployers();
+            projectrb.CheckedChanged += Projectrb_CheckedChanged;
+            projectempcb.SelectedIndexChanged += Projectempcb_SelectedIndexChanged;
+        }
+
+        private void Projectempcb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            EmployerGrid.DataSource = ((Project)projectempcb.SelectedItem).GetEmployers();
+        }
+
+        private void Projectrb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (projectrb.Checked)
+            {
+                projectempcb.SelectedIndexChanged -= Projectempcb_SelectedIndexChanged;
+                ProjectMangment pm = new ProjectMangment();
+                projectempcb.DataSource = pm.GetProjects();
+                projectempcb.DisplayMember = "Name";
+                projectempcb.ValueMember = "ProjectID";
+                projectempcb.SelectedIndex = -1;
+                projectempcb.SelectedIndexChanged += Projectempcb_SelectedIndexChanged;
+
+            }
         }
 
         private void Addempbtn_Click(object sender, EventArgs e)
@@ -45,5 +68,7 @@ namespace DeviceTrackerUI
             
         
         }
+
+
     }
 }

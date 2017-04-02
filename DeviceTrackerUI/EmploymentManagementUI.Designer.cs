@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.EmployerGrid = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.empstatrb = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.Addempbtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.projectrb = new System.Windows.Forms.RadioButton();
+            this.namerb = new System.Windows.Forms.RadioButton();
+            this.projectempcb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.EmployerGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,13 +54,13 @@
             this.EmployerGrid.TabIndex = 0;
             this.EmployerGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployerGrid_CellDoubleClick);
             // 
-            // comboBox1
+            // empstatrb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(421, 38);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 21);
-            this.comboBox1.TabIndex = 12;
+            this.empstatrb.FormattingEnabled = true;
+            this.empstatrb.Location = new System.Drawing.Point(423, 40);
+            this.empstatrb.Name = "empstatrb";
+            this.empstatrb.Size = new System.Drawing.Size(183, 21);
+            this.empstatrb.TabIndex = 12;
             // 
             // button2
             // 
@@ -81,46 +81,47 @@
             this.Addempbtn.UseVisualStyleBackColor = true;
             this.Addempbtn.Click += new System.EventHandler(this.Addempbtn_Click);
             // 
-            // textBox1
+            // projectrb
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 20);
-            this.textBox1.TabIndex = 9;
+            this.projectrb.AutoSize = true;
+            this.projectrb.Checked = true;
+            this.projectrb.Location = new System.Drawing.Point(19, 12);
+            this.projectrb.Name = "projectrb";
+            this.projectrb.Size = new System.Drawing.Size(59, 17);
+            this.projectrb.TabIndex = 8;
+            this.projectrb.TabStop = true;
+            this.projectrb.Text = "Project";
+            this.projectrb.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // namerb
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(165, 14);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Project";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.namerb.AutoSize = true;
+            this.namerb.Location = new System.Drawing.Point(125, 12);
+            this.namerb.Name = "namerb";
+            this.namerb.Size = new System.Drawing.Size(52, 17);
+            this.namerb.TabIndex = 7;
+            this.namerb.Text = "Name";
+            this.namerb.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // projectempcb
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(19, 15);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(52, 17);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Name";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.projectempcb.FormattingEnabled = true;
+            this.projectempcb.Location = new System.Drawing.Point(19, 40);
+            this.projectempcb.Name = "projectempcb";
+            this.projectempcb.Size = new System.Drawing.Size(386, 21);
+            this.projectempcb.TabIndex = 13;
             // 
             // EmploymentManagementUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 553);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.projectempcb);
+            this.Controls.Add(this.empstatrb);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Addempbtn);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.projectrb);
+            this.Controls.Add(this.namerb);
             this.Controls.Add(this.EmployerGrid);
             this.Name = "EmploymentManagementUI";
             this.Text = "EmploymentManagementUI";
@@ -134,11 +135,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView EmployerGrid;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox empstatrb;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Addempbtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton projectrb;
+        private System.Windows.Forms.RadioButton namerb;
+        private System.Windows.Forms.ComboBox projectempcb;
     }
 }

@@ -62,15 +62,15 @@ namespace DeviceTrackerUI
             {
 
                 devicegrid.DataSource = dmn.GetAllWorking((Project)projectemployercmb.SelectedItem == null ? new Project() : (Project)projectemployercmb.SelectedItem)
-                    .Select(p => new DeviceTrackProjection
+                    ?.Select(p => new DeviceTrackProjection
                     {
                         ID = p.DeviceID
                                                                    ,
-                        ProjectName = p.GetProject().Name
+                        ProjectName = p?.GetProject()?.Name
                                                                    ,
-                        EmployerName = p.GetEmployer().Name
+                        EmployerName = p?.GetEmployer()?.Name
                                                                    ,
-                        Descripation = p.Description
+                        Descripation = p?.Description
                                                                    ,
                         IsOwned = p.IsOwned                         ,
                         Date = p.AssignedDate
@@ -84,11 +84,11 @@ namespace DeviceTrackerUI
                 {
                     ID = p.DeviceID
                                                         ,
-                    ProjectName = p.GetProject().Name
+                    ProjectName = p?.GetProject()?.Name
                                                         ,
-                    EmployerName = p.GetEmployer().Name
+                    EmployerName = p?.GetEmployer()?.Name
                                                         ,
-                    Descripation = p.Description
+                    Descripation = p?.Description
                                                         ,
                     Date = p.AssignedDate               ,
                     IsOwned = p.IsOwned
@@ -141,13 +141,13 @@ namespace DeviceTrackerUI
         {
             DeviceMangment dmn = new DeviceMangment();
             projection = dmn.GetAllWorking()
-               .Select(p => new DeviceTrackProjection
+               ?.Select(p => new DeviceTrackProjection
                {
                    ID = p.DeviceID
                                                               ,
-                   ProjectName = p.GetProject().Name
+                   ProjectName = p.GetProject()?.Name
                                                               ,
-                   EmployerName = p.GetEmployer().Name
+                   EmployerName = p.GetEmployer()?.Name
                                                               ,
                    Descripation = p.Description
                                                               ,
